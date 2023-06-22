@@ -9,6 +9,8 @@ body {
   background: var(--color-bg);
 }
 
+/* the body now has a background color that of the variable --color-bg */
+
 a {
   color: unset;
   text-decoration: none;
@@ -50,6 +52,8 @@ a {
   );
 }
 
+  /* got this generated with an online site that makes the gradience for you, and webkit for browser comptability stuff */
+
 .gradient__text {
   background-color: var(--gradient-text);
   background-clip: text;
@@ -65,6 +69,7 @@ a {
   margin: 4rem 6rem;
 }
 
+/* 72-98 is the CSS for the scale-up animation */
 .scale-up-center {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
@@ -93,19 +98,23 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-    .section__padding {
-        padding: 4rem;
-    }
-    .section__margin{
-        margin: 4rem;
-    }
+  .section__padding {
+    padding: 4rem;
+  }
+  .section__margin {
+    margin: 4rem;
+  }
 }
 
+/* for < 700px screens --> responsive design */
+
 @media screen and (max-width: 550px) {
-    .section__padding {
-        padding: 4rem 2rem;
-    }
-    .section__margin{
-        margin: 4rem 2rem;
-    }
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  .section__margin {
+    margin: 4rem 2rem;
+  }
 }
+
+/* for < 550px screens --> responsive design */
